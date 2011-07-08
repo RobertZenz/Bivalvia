@@ -10,7 +10,7 @@
 
 
 # Configuration
-	source=~/Documents/Quotes		# You can specify a folder or a file.
+	source=~/Documents/Quotes		# You can specify a directory or a file.
 
 # Global variables
 	index=$source/.randomIndex		# Index file in case the source is a directory.
@@ -28,16 +28,20 @@ function rebuildIndex {
 	fi
 }
 
-if [ "$1" == "update" ]; then
-	rm $index
-fi
-
+# Source is a directory
 if [ -d $source ]; then
+	if [ "$1" == "update" ]; then
+		rm $index
+	fi
+	
 	if [ ! -e $index ]; then
 		rebuildIndex;
 	fi
+	
 	echo $(rl --count=1 $index);
 fi
+
+# Source if a file
 if [ -f $source ]; then
 	echo $(rl --count=1 $source);
 fi
