@@ -1,5 +1,11 @@
 #!/bin/bash
 
+function setProperties() {
+	xinput set-prop $1 "Evdev Axis Inversion" $2, $3
+	xinput set-prop $1 "Evdev Axes Swap" $4
+}
+
+
 statefile=~/.screenRotation
 
 rotation=0
@@ -27,22 +33,16 @@ if [ "$id" != "" ]; then
 	# synclient Orientation=$rotation
 
 	# Rotate the touchscreen
-	if [ $rotation -eq 0 ]; then 
-		xinput set-prop $id "Evdev Axis Inversion" 0, 0
-		xinput set-prop $id "Evdev Axes Swap" 0
+	if [ $rotation -eq 0 ]; then
+		setProperties $id 0 0 0
+	elif [ $rotation -eq 1 ]; then
+		setProperties $id 1 0 1
+	elif [ $rotation -eq 2 ]; then
+		setProperties $id 1 1 0
+	elif [ $rotation -eq 3 ]; then
+		setProperties $id 0 1 1
 	fi
-	if [ $rotation -eq 1 ]; then 
-		xinput set-prop $id "Evdev Axis Inversion" 1, 0
-		xinput set-prop $id "Evdev Axes Swap" 1
-	fi
-	if [ $rotation -eq 2 ]; then 
-		xinput set-prop $id "Evdev Axis Inversion" 1, 1
-		xinput set-prop $id "Evdev Axes Swap" 0
-	fi
-	if [ $rotation -eq 3 ]; then 
-		xinput set-prop $id "Evdev Axis Inversion" 0, 1
-		xinput set-prop $id "Evdev Axes Swap" 1
-	fi
+	
 	# Rotate the screen
 	xrandr -o $rotation
 fi
