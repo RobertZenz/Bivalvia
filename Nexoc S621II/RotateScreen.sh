@@ -44,7 +44,7 @@ if [ "$id" != "" ]; then
 	fi
 	
 	# Rotate the screen
-	xrandr -o $rotation
+	xrandr --orientation $rotation
 fi
 
 echo $rotation > $statefile
