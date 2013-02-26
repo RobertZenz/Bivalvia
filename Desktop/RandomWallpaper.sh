@@ -23,4 +23,4 @@ fi
 newWallpaper=$(ls "$wallpaperdir" | sort --random-sort | head -n 1)
 
 
-setGnome "$newWallpaper"
+setGnome "$wallpaperdir/$newWallpaper"
