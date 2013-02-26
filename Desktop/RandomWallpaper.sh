@@ -5,6 +5,14 @@
 
 # Public Domain
 
+function setGnome() {
+	gconftool -t str -s /desktop/gnome/background/picture_filename $1
+}
+
+function setMate() {
+	mateconftool-2 -t str -s /desktop/mate/background/picture_filename $1
+}
+
 # Directory of the wallpapers
 wallpaperdir=~/Wallpapers
 
@@ -14,4 +22,5 @@ fi
 
 newWallpaper=$(ls "$wallpaperdir" | sort --random-sort | head -n 1)
 
-gconftool -t str -s /desktop/gnome/background/picture_filename $newWallpaper
+
+setGnome "$newWallpaper"
