@@ -15,6 +15,7 @@ function setMate() {
 
 # Directory of the wallpapers
 wallpaperdir=~/Wallpapers
+sleep=3m
 
 if [ ! -d "$wallpaperdir" ]; then
 	echo "$wallpaperdir does not exist!"
@@ -24,3 +25,7 @@ newWallpaper=$(ls "$wallpaperdir" | sort --random-sort | head -n 1)
 
 
 setGnome "$wallpaperdir/$newWallpaper"
+
+# Wait for some time and then start over.
+sleep $sleep
+exec $0
