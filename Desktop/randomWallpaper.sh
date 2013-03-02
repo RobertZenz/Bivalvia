@@ -3,7 +3,7 @@
 # This is a script which sets a random wallpaper.
 # Some ideas are coming from the xplanet-script located at: http://rbrusu.com/xplanet-desktop-wallpape.html
 
-# Public Domain
+# Public Domain or CC0
 
 function setGnome() {
 	gconftool -t str -s /desktop/gnome/background/picture_filename $1
