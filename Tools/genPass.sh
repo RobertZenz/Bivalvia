@@ -21,4 +21,4 @@ if [ ! -z "$3" ]; then
 	count=$3
 fi
 
-cat /dev/urandom| tr -dc "$fromSet" | fold -w $length| head -n $count
+cat /dev/urandom | tr -dc "$fromSet" | fold -w $length | head -n $count
