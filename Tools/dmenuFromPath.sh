@@ -2,6 +2,9 @@
 
 # Launches demu with the contents of the PATH variable.
 # For some reason that does not work on my Ubuntu 12.10.
+#
+# Turns out it's just me being stupid and not knowing that
+# PATH-extensions should go into .profile, not .bashrc.
 
 # Public Domain or CC0
 
