@@ -17,7 +17,7 @@ fi
 
 # Command line tools
 apt-get -y install \
-	curl espeak htop mathomatic tree
+	curl espeak htop hwinfo mathomatic tree
 
 # Some basic tools
 apt-get -y install \
@@ -64,3 +64,22 @@ apt-get -y install \
 	sgt-puzzles
 
 apt-get clean
+
+# Now remove all the stuff I don't want
+apt-get -y autoremove plymouth-theme-* overlay-scrollbar
+
+
+# Let's do some important stuff, shall we?
+
+# SysRQ
+nano /etc/sysctl.d/10-magic-sysrq.conf
+
+# GRUB
+echo "You will be shown the possible resolutions and the GRUB config file next.\n\
+\n\
+Most likely you want to remove the \"splash\" from the boot options and\n
+add GRUB_GFXPAYLOAD_LINUX=keep." | less
+hwinfo --framebuffer | less
+nano /etc/default/grub
+update-grub
+
