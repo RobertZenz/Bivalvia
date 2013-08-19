@@ -19,9 +19,9 @@ fi
 apt-get -y install \
 	curl espeak htop hwinfo mathomatic tree
 
-# Some basic tools
+# Some basic stuff
 apt-get -y install \
-	dclock conky-all terminator git
+	dclock conky-all terminator git openjdk-7-jre
 
 # Internet
 apt-get -y install \
