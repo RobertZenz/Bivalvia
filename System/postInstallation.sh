@@ -28,7 +28,19 @@ apt-get -y install \
 
 # Some basic stuff
 apt-get -y install \
-	conky-all dclock git lxappearance openjdk-7-jre suckless-tools terminator xplanet
+	conky-all \
+	dclock \
+	git \
+	lxappearance \
+	openjdk-7-jre \
+	seahorse \
+	seahors-daemon \
+	software-center \
+	software-properties-gtk \
+	suckless-tools \
+	terminator \
+	update-manager \
+	xplanet
 
 # Internet
 apt-get -y install \
