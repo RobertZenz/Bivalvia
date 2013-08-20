@@ -88,6 +88,10 @@ apt-get -y autoremove plymouth-theme-* overlay-scrollbar
 echo "Set up the SysRq calls...change it to 1." | less
 nano /etc/sysctl.d/10-magic-sysrq.conf
 
+# umask
+echo "/etc/profile (umask?) is our next stop." | less
+nano /etc/profile
+
 # GRUB
 echo "You will be shown the possible resolutions and the GRUB config file next.\n\
 \n\
