@@ -10,10 +10,17 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 
-# TODO: Add MATE repository
-# TODO: Add that other repository I just forgot about
-# TODO: Install MATE
+# Make space
+apt-get clean
 
+apt-get -y install software-properties-common
+add-apt-repository ppa:nilarimogard/webupd8
+add-apt-repository "deb http://packages.mate-desktop.org/repo/ubuntu $(lsb_release -sc) main"
+
+apt-get update
+
+# Install Mate and MDM
+apt-get -y install mate-core mate-desktop-environment mdm
 
 # Command line tools
 apt-get -y install \
@@ -21,7 +28,7 @@ apt-get -y install \
 
 # Some basic stuff
 apt-get -y install \
-	dclock conky-all terminator git openjdk-7-jre
+	conky-all dclock git openjdk-7-jre terminator xplanet
 
 # Internet
 apt-get -y install \
@@ -72,6 +79,7 @@ apt-get -y autoremove plymouth-theme-* overlay-scrollbar
 # Let's do some important stuff, shall we?
 
 # SysRQ
+echo "Set up the SysRq calls...change it to 1." | less
 nano /etc/sysctl.d/10-magic-sysrq.conf
 
 # GRUB
