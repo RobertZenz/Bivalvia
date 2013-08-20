@@ -28,7 +28,7 @@ apt-get -y install \
 
 # Some basic stuff
 apt-get -y install \
-	conky-all dclock git openjdk-7-jre terminator xplanet
+	conky-all dclock git lxappearance openjdk-7-jre terminator xplanet
 
 # Internet
 apt-get -y install \
