@@ -18,15 +18,19 @@ apt-get -y install mate-core mate-desktop-environment mdm
 
 # Command line tools
 apt-get -y install \
-	curl espeak htop hwinfo mathomatic tree
+	curl espeak htop hwinfo moreutils mathomatic parallel tree
 
 # Some basic stuff
 apt-get -y install \
 	conky-all \
 	dclock \
+	figlet \
+	fortunes \
+	gcolor2 \
 	git \
 	lxappearance \
 	openjdk-7-jre \
+	screenruler \
 	seahorse \
 	seahors-daemon \
 	software-center \
@@ -51,6 +55,7 @@ apt-get clean
 
 # Graphical
 apt-get -y install \
+	blender \
 	gimp gimp-data gimp-data-extras \
 	gimp-texturize gimp-gmic \
 	inkscape \
@@ -89,7 +94,7 @@ echo "Set up the SysRq calls...change it to 1." | less
 nano /etc/sysctl.d/10-magic-sysrq.conf
 
 # umask
-echo "/etc/profile (umask?) is our next stop." | less
+echo "/etc/profile (umask 0027?) is our next stop." | less
 nano /etc/profile
 
 # GRUB
