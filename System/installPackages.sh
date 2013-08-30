@@ -86,23 +86,3 @@ apt-get clean
 # Now remove all the stuff I don't want
 apt-get -y autoremove plymouth-theme-* overlay-scrollbar
 
-
-# Let's do some important stuff, shall we?
-
-# SysRQ
-echo "Set up the SysRq calls...change it to 1." | less
-nano /etc/sysctl.d/10-magic-sysrq.conf
-
-# umask
-echo "/etc/profile (umask 0027?) is our next stop." | less
-nano /etc/profile
-
-# GRUB
-echo "You will be shown the possible resolutions and the GRUB config file next.\n\
-\n\
-Most likely you want to remove the \"splash\" from the boot options and\n
-add GRUB_GFXPAYLOAD_LINUX=keep." | less
-hwinfo --framebuffer | less
-nano /etc/default/grub
-update-grub
-
