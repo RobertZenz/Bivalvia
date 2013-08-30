@@ -38,6 +38,7 @@ apt-get -y install \
 	suckless-tools \
 	terminator \
 	update-manager \
+	vim-gnome \
 	xplanet
 
 # Internet
