@@ -20,6 +20,10 @@ nano /etc/sysctl.d/10-magic-sysrq.conf
 echo "/etc/profile (umask 0027?) is our next stop." | less
 nano /etc/profile
 
+# visudo
+echo "Configure sudo, f.e. add insults." | less
+visudo
+
 # GRUB
 echo "You will be shown the possible resolutions and the GRUB config file next.\n\
 \n\
