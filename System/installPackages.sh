@@ -87,3 +87,12 @@ apt-get clean
 # Now remove all the stuff I don't want
 apt-get -y autoremove plymouth-theme-* overlay-scrollbar
 
+# Now get some external packages.
+wget "http://downloads.sourceforge.net/project/deadbeef/debian/0.5.6/deadbeef_0.5.6-1_i386.deb"
+dpkg --install "deadbeef_0.5.6-1_i386.deb"
+rm "deadbeef_0.5.6-1_i386.deb"
+
+wget "http://mirror.informatik.uni-mannheim.de/pub/mirrors/getdeb/ubuntu/pool/games/t/the-powder-toy/the-powder-toy_88.1-1%7egetdeb1_i386.deb"
+dpkg --install "the-powder-toy_88.1-1~getdeb1_i386.deb"
+rm "the-powder-toy_88.1-1~getdeb1_i386.deb"
+
