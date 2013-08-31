@@ -24,7 +24,6 @@ apt-get -y install \
 apt-get -y install \
 	conky-all \
 	dclock \
-	figlet \
 	fortunes \
 	gcolor2 \
 	git \
@@ -37,6 +36,7 @@ apt-get -y install \
 	software-properties-gtk \
 	suckless-tools \
 	terminator \
+	toilet toilet-fonts \
 	update-manager \
 	vim-gnome \
 	xplanet
