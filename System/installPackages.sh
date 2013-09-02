@@ -35,6 +35,7 @@ apt-get -y install \
 	software-center \
 	software-properties-gtk \
 	suckless-tools \
+	subversion \
 	terminator \
 	toilet toilet-fonts \
 	update-manager \
