@@ -33,3 +33,6 @@ hwinfo --framebuffer | less
 nano /etc/default/grub
 update-grub
 
+
+echo "Don't forget to change the DNS servers if necessary!" | less
+
