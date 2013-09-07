@@ -13,5 +13,6 @@ fi
 apt-get -y install software-properties-common
 add-apt-repository ppa:nilarimogard/webupd8
 add-apt-repository "deb http://packages.mate-desktop.org/repo/ubuntu $(lsb_release -sc) main"
+add-apt-repository ppa:ubuntu-wine/ppa
 apt-get update
 
