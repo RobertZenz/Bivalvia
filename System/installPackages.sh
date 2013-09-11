@@ -32,6 +32,7 @@ apt-get -y install \
 	screenruler \
 	seahorse \
 	seahors-daemon \
+	smartmontools gsmartcontrol smart-notifier \
 	software-center \
 	software-properties-gtk \
 	suckless-tools \
