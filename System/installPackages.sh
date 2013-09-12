@@ -69,7 +69,8 @@ apt-get clean
 # Communications
 apt-get -y install \
 	pidgin xchat \
-	claws-mail claws-mail-attach-warner
+	claws-mail claws-mail-attach-warner \
+	thunderbird
 apt-get clean
 
 # Media
