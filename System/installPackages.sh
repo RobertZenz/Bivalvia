@@ -14,11 +14,11 @@ fi
 apt-get clean
 
 # Install Mate and MDM
-apt-get -y install mate-core mate-desktop-environment mdm
+apt-get -y install mate-core mate-desktop-environment mate-desktop-environment-extra mdm
 
 # Command line tools
 apt-get -y install \
-	curl espeak htop hwinfo moreutils mathomatic parallel tree
+	gawk curl espeak htop hwinfo moreutils mathomatic parallel tree
 
 # Some basic stuff
 apt-get -y install \
@@ -32,9 +32,11 @@ apt-get -y install \
 	screenruler \
 	seahorse \
 	seahors-daemon \
+	smartmontools gsmartcontrol smart-notifier \
 	software-center \
 	software-properties-gtk \
 	suckless-tools \
+	subversion \
 	terminator \
 	toilet toilet-fonts \
 	update-manager \
@@ -67,7 +69,8 @@ apt-get clean
 # Communications
 apt-get -y install \
 	pidgin xchat \
-	claws-mail claws-mail-attach-warner
+	claws-mail claws-mail-attach-warner \
+	thunderbird
 apt-get clean
 
 # Media
