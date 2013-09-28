@@ -23,6 +23,7 @@ apt-get -y install \
 # Some basic stuff
 apt-get -y install \
 	conky-all \
+	cowsay \
 	dclock \
 	fortunes \
 	gcolor2 \
