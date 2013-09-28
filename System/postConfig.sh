@@ -14,11 +14,11 @@ fi
 
 # SysRQ
 echo "Set up the SysRq calls...change it to 1." | less
-nano /etc/sysctl.d/10-magic-sysrq.conf
+vim /etc/sysctl.d/10-magic-sysrq.conf
 
 # umask
 echo "/etc/profile (umask 0027?) is our next stop." | less
-nano /etc/profile
+vim /etc/profile
 
 # visudo
 echo "Configure sudo, f.e. add insults." | less
@@ -26,7 +26,7 @@ visudo
 
 # DNS
 echo "Next is the head file of resolvconf." | less
-nano /etc/resolvconf/resolv.conf.d/head
+vim /etc/resolvconf/resolv.conf.d/head
 resolvconf -u
 
 # GRUB
@@ -35,7 +35,7 @@ echo "You will be shown the possible resolutions and the GRUB config file next.\
 Most likely you want to remove the \"splash\" from the boot options and\n
 add GRUB_GFXPAYLOAD_LINUX=keep." | less
 hwinfo --framebuffer | less
-nano /etc/default/grub
+vim /etc/default/grub
 update-grub
 
 
