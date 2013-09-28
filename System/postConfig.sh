@@ -24,6 +24,11 @@ nano /etc/profile
 echo "Configure sudo, f.e. add insults." | less
 visudo
 
+# DNS
+echo "Next is the head file of resolvconf." | less
+nano /etc/resolvconf/resolv.conf.d/head
+resolvconf -u
+
 # GRUB
 echo "You will be shown the possible resolutions and the GRUB config file next.\n\
 \n\
@@ -34,5 +39,4 @@ nano /etc/default/grub
 update-grub
 
 
-echo "Don't forget to change the DNS servers if necessary!" | less
 
