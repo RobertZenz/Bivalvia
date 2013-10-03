@@ -28,6 +28,7 @@ apt-get -y install \
 	fortunes \
 	gcolor2 \
 	git \
+	jhead \
 	lxappearance \
 	openjdk-7-jre \
 	pass \
