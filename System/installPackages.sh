@@ -43,6 +43,7 @@ apt-get -y install \
 	terminator \
 	toilet toilet-fonts \
 	update-manager \
+	vim \
 	vim-gnome \
 	xplanet
 
