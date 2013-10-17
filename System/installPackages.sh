@@ -32,6 +32,7 @@ apt-get -y install \
 	lxappearance \
 	openjdk-7-jre \
 	pass \
+	redshift \
 	screenruler \
 	seahorse \
 	seahors-daemon \
