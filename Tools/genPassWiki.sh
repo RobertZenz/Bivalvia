@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Generates random, XKCD-style passwords from Wikipedia
 # genPassWiki.sh
