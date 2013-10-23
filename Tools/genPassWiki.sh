@@ -25,5 +25,5 @@ fi
 
 curl --silent --location http://en.wikipedia.org/wiki/Special:Random | \
 html2text | egrep --only-matching "[$fromSet]*" | sort | uniq | sort --random-sort | \
-head --lines=$(($words*$count)) | paste "--delimiters=" - - - -
+head --lines=$(($words*$count)) | sed "s/.*/\u&/" | paste "--delimiters=" - - - -
 
