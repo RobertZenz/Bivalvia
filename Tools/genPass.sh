@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # Generates random passwords from /dev/urandom
 # genPass.sh LENGTH FROM_SET COUNT
