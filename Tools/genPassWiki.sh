@@ -3,7 +3,7 @@
 # Generates random, XKCD-style passwords from Wikipedia
 # genPassWiki.sh
 
-# Usage: ./genPassWiki.sh WORDS SET COUNT
+# Usage: ./genPassWiki.sh WORDS_MINIMUM_LENGTH COUNT SET
 
 # Public Domain or CC0
 
@@ -13,15 +13,15 @@ count=1
 minLength=5
 
 if [ ! -z "$1" ]; then
-	words=$1
+	minLength=$1
 fi
 
 if [ ! -z "$2" ]; then
-	fromSet=$2
+	count=$2
 fi
 
 if [ ! -z "$3" ]; then
-	count=$3
+	fromSet=$3
 fi
 
 curl --silent --location http://en.wikipedia.org/wiki/Special:Random | \
