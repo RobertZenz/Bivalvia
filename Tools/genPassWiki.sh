@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 # Generates random, XKCD-style passwords from Wikipedia
-# genPassWiki.sh
+# Public Domain or CC0
+
+# Dependencies: curl html2text
 
 # Usage: ./genPassWiki.sh WORDS_MINIMUM_LENGTH COUNT SET
 
-# Public Domain or CC0
 
 words=4
 fromSet="a-zA-Z0-9"
