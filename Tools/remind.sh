@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Schedules reminder via notify-send and at.
 # The original idea is, I think, from somewhere around /r/unixporn.

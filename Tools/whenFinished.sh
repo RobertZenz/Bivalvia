@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Informs you when a task has finished.
 # Usage: task; whenFinished

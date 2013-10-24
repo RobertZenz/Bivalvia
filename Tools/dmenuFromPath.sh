@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # Launches demu with the contents of the PATH variable.
 # For some reason that does not work on my Ubuntu 12.10.

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # Displays some color information
 # Usage: ./colorTable.sh [ICON]

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # This is a simple script to run the VACUUM command on all
 # SQLite-Databases found in the specified directory.
