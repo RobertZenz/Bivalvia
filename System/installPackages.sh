@@ -18,7 +18,7 @@ apt-get -y install mate-core mate-desktop-environment mate-desktop-environment-e
 
 # Command line tools
 apt-get -y install \
-	gawk curl espeak htop hwinfo moreutils mathomatic parallel tree
+	gawk curl espeak htop hwinfo moreutils mathomatic tree
 
 # Some basic stuff
 apt-get -y install \
