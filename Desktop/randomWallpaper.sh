@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # This is a script which sets a random wallpaper.
 # Some ideas are coming from the xplanet-script located at: http://rbrusu.com/xplanet-desktop-wallpape.html

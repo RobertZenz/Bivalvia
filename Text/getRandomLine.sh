@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # Script for getting a random line from a random (or defined) file.
 

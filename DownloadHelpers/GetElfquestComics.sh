@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # This is a simple script to download all of the
 # ElfQuest comics directly into a directory hirarchy

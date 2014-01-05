@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # This is a simple script to get all garfield comics.
 # The comics will be loaded from ucomics.com, before you ask

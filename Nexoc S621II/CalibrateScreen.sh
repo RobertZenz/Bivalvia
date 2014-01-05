@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # Rough approximations
 # 1024x768	32 347 3787 -4 4119

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # This is a script which prints random quotes (gathered from files) on to
 # a defined wallpaper.

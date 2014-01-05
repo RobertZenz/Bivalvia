@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 function setProperties() {
 	xinput set-prop $1 "Evdev Axis Inversion" $2, $3
