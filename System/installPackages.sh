@@ -34,18 +34,15 @@ apt-get -y install \
 	pass \
 	redshift \
 	screenruler \
-	seahorse \
-	seahors-daemon \
+	seahorse seahors-daemon \
 	smartmontools gsmartcontrol smart-notifier \
-	software-center \
-	software-properties-gtk \
+	software-center	software-properties-gtk \
 	suckless-tools \
 	subversion \
 	terminator \
 	toilet toilet-fonts \
 	update-manager \
-	vim \
-	vim-gnome \
+	vim vim-gnome \
 	xplanet
 
 # Internet
