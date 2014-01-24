@@ -88,6 +88,7 @@ apt-get -y install \
 
 # Don't need to set something up without these
 apt-get -y install \
+	bsdgames \
 	sgt-puzzles
 
 apt-get clean
