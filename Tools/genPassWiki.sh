@@ -12,6 +12,7 @@ words=4
 fromSet="a-zA-Z0-9"
 count=1
 minLength=5
+language=en
 
 if [ ! -z "$1" ]; then
 	minLength=$1
@@ -25,7 +26,7 @@ if [ ! -z "$3" ]; then
 	fromSet=$3
 fi
 
-curl --silent --location https://en.wikipedia.org/wiki/Special:Random | \
+curl --silent --location https://${language}.wikipedia.org/wiki/Special:Random | \
 	html2text | \
 	egrep --only-matching "[$fromSet]{$minLength,}" | \
 	sort | \
