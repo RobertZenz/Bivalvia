@@ -30,11 +30,11 @@ winecfg
 "
 
 createScript run.sh "$scriptStart
-wine \$*
+wine \"\$*\"
 "
 
 createScript tricks.sh "$scriptStart
-winetricks \$*
+winetricks \"\$*\"
 "
 
 ./cfg.sh
