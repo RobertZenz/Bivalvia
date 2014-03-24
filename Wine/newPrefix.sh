@@ -29,6 +29,10 @@ createScript cfg.sh "$scriptStart
 winecfg
 "
 
+createScript explorer.sh "$scriptStart
+./run.sh explorer.exe
+"
+
 createScript run.sh "$scriptStart
 wine \"\$*\"
 "
