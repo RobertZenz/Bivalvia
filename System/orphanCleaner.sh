@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # A simple cleanup script that runs deborphan, let's you select all the packages
-# you'd like to remove and afterwards runs apt-get autoremove.
+# you'd like to remove/purge and afterwards runs apt-get autoremove.
 
 # Usage: ./orphanCleaner.sh [DEBORPHAN OPTIONS]
 
