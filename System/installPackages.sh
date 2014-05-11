@@ -37,7 +37,7 @@ apt-get -y install \
 	pass \
 	redshift \
 	screenruler \
-	seahorse seahors-daemon \
+	seahorse seahorse-daemon \
 	smartmontools gsmartcontrol smart-notifier \
 	software-center	software-properties-gtk \
 	suckless-tools \
