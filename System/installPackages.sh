@@ -14,7 +14,10 @@ fi
 apt-get clean
 
 # Install Mate and MDM
-apt-get -y install mate-core mate-desktop-environment mate-desktop-environment-extra mdm
+apt-get -y install \
+	mate-core mate-desktop-environment mate-desktop-environment-extra \
+	mate-media-pulse mate-settings-daemon-pulse \
+	mdm
 
 # Command line tools
 apt-get -y install \
