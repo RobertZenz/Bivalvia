@@ -5,12 +5,16 @@
 
 # Public Domain or CC0
 
-function setGnome() {
+function setGnomeGConf() {
 	gconftool -t str -s /desktop/gnome/background/picture_filename $1
 }
 
-function setMate() {
+function setMateConf() {
 	mateconftool-2 -t str -s /desktop/mate/background/picture_filename $1
+}
+
+function setMateDConf() {
+	dconf write /org/mate/desktop/background/picture-filename $1
 }
 
 # Directory of the wallpapers
@@ -23,9 +27,9 @@ fi
 
 newWallpaper=$(ls "$wallpaperdir" | sort --random-sort | head -n 1)
 
-
-setGnome "$wallpaperdir/$newWallpaper"
+setMateDConf "$wallpaperdir/$newWallpaper"
 
 # Wait for some time and then start over.
+# If you want a "one shot solution" remove the next two lines.
 sleep $sleep
 exec $0
