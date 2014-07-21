@@ -41,6 +41,6 @@ createScript tricks.sh "$scriptStart
 winetricks \"\$*\"
 "
 
-./cfg.sh
 ./tricks.sh
+./cfg.sh
 
