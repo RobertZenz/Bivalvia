@@ -26,7 +26,7 @@ if [ ! -z "$3" ]; then
 	fromSet=$3
 fi
 
-curl --silent --location https://${language}.wikipedia.org/wiki/Special:Random | \
+curl --silent --location https://${language}.m.wikipedia.org/wiki/Special:Random | \
 	html2text | \
 	egrep --only-matching "[$fromSet]{$minLength,}" | \
 	sort | \
