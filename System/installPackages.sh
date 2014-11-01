@@ -13,10 +13,13 @@ fi
 # Make space
 apt-get clean
 
-# Install Mate and MDM
+# Install Mate
 apt-get -y install \
-	mate-core mate-desktop-environment mate-desktop-environment-extra \
-	mate-media-pulse mate-settings-daemon-pulse \
+	mate-desktop-environment-extras \
+	mate-media-pulse mate-settings-daemon-pulse
+
+# MDM
+apt-get -y install \
 	mdm
 
 # Command line tools
@@ -29,6 +32,8 @@ apt-get -y install \
 	cowsay \
 	dclock \
 	fortunes \
+	gaiksaurus \
+	galculator \
 	gcolor2 \
 	git \
 	jhead \
@@ -53,12 +58,14 @@ apt-get -y install \
 	firefox chromium-browser flush \
 	flashplugin-installer \
 	ttf-mscorefonts-installer # Unfortunately needed...
+
 apt-get clean
 
 # Office
 apt-get -y install \
 	libreoffice \
 	ttf-dejavu
+
 apt-get clean
 
 # Graphical
@@ -69,6 +76,7 @@ apt-get -y install \
 	inkscape \
 	ufraw darktable \
 	imagemagick
+
 apt-get clean
 
 # Communications
@@ -76,6 +84,7 @@ apt-get -y install \
 	pidgin xchat \
 	claws-mail claws-mail-attach-warner \
 	thunderbird
+
 apt-get clean
 
 # Media
