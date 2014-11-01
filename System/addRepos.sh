@@ -11,8 +11,16 @@ fi
 
 
 apt-get -y install software-properties-common
+
+# Needed for MDM
 add-apt-repository ppa:nilarimogard/webupd8
-add-apt-repository "deb http://packages.mate-desktop.org/repo/ubuntu $(lsb_release -sc) main"
+
+# MATE
+apt-add-repository ppa:ubuntu-mate-dev/ppa
+apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+
+# Wine
 add-apt-repository ppa:ubuntu-wine/ppa
+
 apt-get update
 
