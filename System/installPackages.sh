@@ -24,7 +24,16 @@ apt-get -y install \
 
 # Command line tools
 apt-get -y install \
-	gawk curl espeak htop hwinfo moreutils mathomatic tree
+	gawk \
+	curl \
+	espeak \
+	htop \
+	hwinfo \
+	moreutils \
+	mathomatic \
+	pass \
+	tree \
+	wcalc
 
 # Some basic stuff
 apt-get -y install \
@@ -36,10 +45,9 @@ apt-get -y install \
 	galculator \
 	gcolor2 \
 	git \
+	gpick \
 	jhead \
 	lxappearance \
-	openjdk-7-jre \
-	pass \
 	redshift \
 	screenruler \
 	seahorse seahorse-daemon \
@@ -48,10 +56,15 @@ apt-get -y install \
 	suckless-tools \
 	subversion \
 	terminator \
+	tig \
 	toilet toilet-fonts \
 	update-manager \
 	vim vim-gnome \
 	xplanet
+
+# Java
+apt-get install -y \
+	openjdk-7-jre
 
 # Internet
 apt-get -y install \
