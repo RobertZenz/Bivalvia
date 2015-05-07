@@ -37,6 +37,7 @@ apt-get -y install \
 	gcolor2 \
 	git \
 	jhead \
+	jq \
 	lxappearance \
 	openjdk-7-jre \
 	pass \
