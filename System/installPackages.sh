@@ -47,6 +47,7 @@ apt-get -y install \
 	git \
 	gpick \
 	jhead \
+	jq \
 	lxappearance \
 	redshift \
 	screenruler \
