@@ -36,6 +36,19 @@ addRepository() {
 	fi
 }
 
+testRepository() {
+	remote_name=$(echo "$1" | sed "s/\(.*\)/\L\1/g")
+	
+	/bin/echo -n "Testing \"$remote_name\": "
+	
+	$(git ls-remote $remote_name > /dev/null 2>&1)
+	if [ $? -ne 0 ]; then
+		echo "FAILED"
+	else
+		echo "OK"
+	fi
+}
+
 
 # Check if here is already a repository.
 $(git rev-parse > /dev/null 2>&1)
@@ -48,4 +61,10 @@ addRepository "BitBucket" "git@bitbucket.org:USERNAME/PROJECT_NAME.git"
 addRepository "Launchpad" "git+ssh://USERNAME@git.launchpad.net/PROJECT_NAME"
 
 git remote -v
+
+echo ""
+
+testRepository "GitHub"
+testRepository "BitBucket"
+testRepository "Launchpad"
 
