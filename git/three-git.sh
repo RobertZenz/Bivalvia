@@ -6,7 +6,7 @@
 # Public Domain or CC0
 
 
-projectName=$(dialog --stdout --trim --inputbox "Please enter the project name." 7 70)
+projectName=$(dialog --stdout --trim --inputbox "Please enter the project name for \"$(basename "$PWD")\"." 7 70)
 
 
 addRepository() {
