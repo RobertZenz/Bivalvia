@@ -85,7 +85,7 @@ apt-get clean
 # Graphical
 apt-get -y install \
 	blender \
-	gimp gimp-data gimp-data-extras \
+	gimp gimp-data gimp-data-extras gimp-plugin-registry \
 	gimp-texturize gimp-gmic \
 	inkscape \
 	ufraw darktable \
@@ -103,7 +103,9 @@ apt-get clean
 
 # Media
 apt-get -y install \
-	vlc streamtuner2
+	geequie \
+	streamtuner2 \
+	vlc
 
 # Neat suff to have
 apt-get -y install \
